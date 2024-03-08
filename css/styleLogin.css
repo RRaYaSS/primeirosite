@@ -194,6 +194,10 @@
     left: 35%;
     font-family: minhaFonte;
 }
+.exTitle{
+    top: 10px;
+    left: 22%;
+}
 #logtitle{
     left: 40%;
 }
