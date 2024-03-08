@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="shortcut icon" href="/images/html.ico" type="image/x-icon">
+
+    <title>Cadastro de Aluno</title>
+   
+    <link rel="stylesheet" href="/css/menu.css"> 
+    <link rel="stylesheet" href="/css/styleLogin.css">
+   
+    <script defer src="/js/script.js"></script>
+
+</head>
+<body class="cadcorpo">
+      
+          
+    <header class="header">
+        <nav class="nav">
+            <button class="burger"></button>
+        <ul class="nav-list">
+            
+            <li><a href="#">Inclusão&gt</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li> <a href="/html/cadAluno.html">De novo Aluno</a></li>
+                        <li> <a href="/html/cadCurso.html">De novo Curso</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Exclusão&gt</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li> <a href="/html/excluirAluno.html">De novo Aluno</a></li>
+                        <li> <a href="/html/excluirCurso.html">De novo Curso</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Alteração&gt</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li> <a href="/html/alterarAluno.html">De novo Aluno</a></li>
+                        <li> <a href="/html/alterarCurso.html">De novo Curso</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="/html/consulta.html">Consulta</a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+          
+    
+
+<div class="conteiner0 area ">
+   
+    <div>
+        <h1 class="title" id="CadAl_ttl">Cadastro</h1>
+    </div>
+    
+    <div class="campos">
+        
+        <label for="aluno" id="nmaluno">Aluno:</label>
+         <input  type="text" name="cadNome_inp" id="cadNome_inp" required>
+    </div>
+    
+    
+        <div class="campos">
+            <label for="curso" id="nmcurso">Curso:</label>
+            <input  type="text" name="cadCurso_ipn" id="nmcurso"   required>
+        </div>
+    
+        <div class="campos"> 
+            <label for="Número de Horas" id="">Número de Horas:</label>
+            <input  type="number" name="nhoras" id="nhoras" min="20" max="100" required>
+        </div>
+    
+       
+        <div class="hora" >
+            <label for="horario">Horário</label>
+            <input type="time" step="3600" name="inter1" id="inter1" required> <label for="">às</label>
+            <input   type="time" step="3600" name="inter2" id="inter2" required>
+        </div>
+        
+        <button class="btn" type="button">Cadastrar</button>
+        
+</div>
+    
+<div class="sumir ">
+    
+    <button class="btn btnvoltar"  type="button" onclick="voltarLogin()" >&lt Voltar para tela de Login</button>
+    <button class="btn" id="CadAl_to_cadCur"  type="button" onclick="cadAl_to_cadCur()" >Cadastrar Novo Curso &gt</button>
+</div>
+    
+        
+</body>
+</html>

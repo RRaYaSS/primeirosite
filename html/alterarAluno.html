@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="shortcut icon" href="/images/html.ico" type="image/x-icon">
+
+    <title>Alterar Aluno</title>
+   
+    <link rel="stylesheet" href="/css/menu.css"> 
+    <link rel="stylesheet" href="/css/styleLogin.css">
+   
+    <script defer src="/js/script.js"></script>
+
+</head>
+<body class="cadcorpo">
+      
+          
+<header class="header">
+    <nav class="nav">
+        <button class="burger"></button>
+    <ul class="nav-list">
+        
+        <li><a href="#">Inclusão&gt</a>
+            <div class="sub-menu">
+                <ul>
+                    <li> <a href="/html/cadAluno.html">De novo Aluno</a></li>
+                    <li> <a href="/html/cadCurso.html">De novo Curso</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Exclusão&gt</a>
+            <div class="sub-menu">
+                <ul>
+                    <li> <a href="/html/excluirAluno.html">De novo Aluno</a></li>
+                    <li> <a href="/html/excluirCurso.html">De novo Curso</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Alteração&gt</a>
+            <div class="sub-menu">
+                <ul>
+                    <li> <a href="/html/alterarAluno.html">De novo Aluno</a></li>
+                    <li> <a href="/html/alterarCurso.html">De novo Curso</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="/html/consulta.html">Consulta</a>
+        </li>
+    </ul>
+    </nav>
+</header>
+          
+    
+
+<div class="conteiner0 area ">
+   
+    <div>
+        <h1 class="title atlTitle">Alterar Aluno</h1>
+    </div>
+    
+    <div class="campos">
+        <img  id="lupa" src="https://img.icons8.com/ios/50/FFFFFF/search--v1.png" alt="search--v1"/>
+        <label for="aluno" id="nmaluno">Pesquisar nome Aluno:</label>
+         <input  type="text" name="altnome_inp" id="altnome_inp" required>
+    </div>
+    
+    
+        <div class="campos">
+            <label for="curso" id="nmcurso">Alterar Curso:</label>
+            <input  type="text" name="altcurso_inp" id="altcurso_inp"   required>
+        </div>
+    
+        <div class="campos"> 
+            <label for="Número de Horas" id="">Alterar Número de Horas:</label>
+            <input  type="number" name="nhoras_inp" id="nhoras_inp" min="20" max="100" required>
+        </div>
+    
+       
+        <div class="hora" >
+            <label for="altHoras" >Alterar Horário:</label><br>
+            <input type="time" step="3600" name="inter3" id="inter3" required> <label for="">às</label>
+            <input   type="time" step="3600" name="inter4" id="inter4" required>
+        </div>
+        
+        <button class="btn" type="button">Alterar</button>
+        
+</div>
+    
+<div class="sumir ">
+    
+    <button class="btn btnvoltar"  type="button" onclick="altAl_to_altCur()" >Alterar Curso &gt</button>
+</div>
+    
+        
+</body>
+</html>

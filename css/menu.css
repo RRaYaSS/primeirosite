@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body a {
+    font-family: minhaFonte;
+    text-decoration: none;
+   
+}
+.header{
+    display: flex ;
+    justify-content: left;
+    width: auto;
+ 
+    background:transparent;
+    padding-inline: 16px;
+
+}
+.nav{
+     max-width: 1280px;
+     height: 70px;
+     margin-inline: left;
+     
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.nav-list{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+.nav-list a{
+   font-size: 18px;
+   color: rgb(255, 255, 255);
+   padding-block: 16px; 
+}
+
+.burger{
+    display:flex ;
+    border: none;
+    background: none;
+    border-top: 3px solid white;
+    cursor: pointer;
+}
+.burger::before,.burger::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.burger{
+  display: block;
+  z-index: 1;
+}
+
+.nav-list{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  clip-path: circle(100px  at -10% -15% ); 
+  transition: 0.1s ease-out;
+  
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  pointer-events: none;
+}
+.nav.active .nav-list{
+  clip-path: circle(1500px  at 50% 15%); 
+  pointer-events: all;
+}
+.nav-list a {
+  font-size: 24px;
+  opacity: 0;
+}
+.nav-list li:nth-child(1) a {
+  transition: 0.5s 0.05s;
+}
+
+.nav-list li:nth-child(2) a {
+  transition: 0.5s 0.15s;
+}
+
+.nav-list li:nth-child(3) a {
+  transition: 0.5s 0.25s;
+}
+.nav-list li:nth-child(4) a {
+  transition: 0.5s 0.35s;
+}
+.nav.active .nav-list a{
+  opacity: 1;
+}
+.nav.active .burger{
+  position: fixed;
+  
+  border-top-color: transparent;
+}
+.nav.active .burger::before{
+  transform: rotate(135deg);
+}
+.nav.active .burger::after{
+  transform: rotate(-135deg);
+  top: -7px;
+}
+.sub-menu{
+  display: none;
+
+} 
+nav ul li {
+  text-decoration: none;
+  margin-top: 15px;
+}
+nav ul li:hover .sub-menu{
+  display: block;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  margin-top: 1px;
+  margin-left: -28px;
+}
+nav ul li:hover .sub-menu ul{
+  display: block;
+}
+nav ul li:hover .sub-menu ul li:hover{
+  transition: 0s;
+  background-color: white;
+  border-radius: 10px;
+  & a{
+    color: black;
+  }
+  
+}
+nav ul li .sub-menu ul li a {
+
+  color: rgb(255, 254, 254);
+  transition: color 0.3s ease; 
+}

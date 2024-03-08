@@ -1,0 +1,257 @@
+@font-face{ 
+    font-family:minhaFonte;
+    src: url(KodeMono-Bold.ttf);
+}
+
+.corpo{  
+    height: 100vh;
+    width: 100vh;
+    background: url(/images/13107749_5137894.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif
+}
+.cadcorpo{
+    height: 100vh;
+    background: url(/images/13107749_5137894.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif
+}
+.conteiner0{   
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+}
+.conteiner1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%,-50%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+}
+.conteiner2{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    
+}
+.conteiner3{   
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    height: 30px;
+    position: absolute;
+    top: 74%;
+    left: 34%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.conteiner3 label{
+    margin-bottom: 30px;
+}
+
+.area{   
+    padding:100px 60px;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 64px;
+    background: transparent;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    align-items: center;
+    
+    & h1{
+        color: white;
+    }
+    
+}
+.area label{
+    margin-bottom:10px;
+}
+
+.btn{
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+    width: 46%;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    font-family: minhaFonte;
+    
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.btnvoltar{
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5)
+    
+}
+#CadAl_to_cadCur{
+    display: block;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5)
+}
+
+.campos{
+    color: white;
+
+    & label{
+        position: absolute;
+        font-size: 14px;     
+    }
+    & input{
+    color: white;
+    border: 0;
+    border-bottom: 2px solid white;
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    }
+    & img{
+    width: 25px;
+    position: absolute;
+    right: 59px;
+    }
+}
+
+#nomelablog{
+    top: 23%;
+    left: 66px;
+}
+#senhalablog{
+    top: 37%;
+    left: 66px;
+}
+
+#user{
+    top: 26%;
+}
+#lock{
+    top: 40%;
+}
+#lupa{
+    top: 28%;
+    left:81%;
+}
+.manter{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px; 
+}
+.manter a {
+    text-decoration: none;
+    color: white;
+}
+.manter a:hover{
+    color: blue;
+}
+.manter label{
+    color: white
+    
+}
+.manter input{
+    cursor: pointer;
+}
+
+.hora{
+    margin: 10px;
+    padding: 10px;
+    & label{
+        color: white;
+    }
+}
+
+.title{
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    font-family: minhaFonte;
+}
+#logtitle{
+    left: 40%;
+}
+#CadAl_ttl{
+    top: 10px;
+    left: 32%;
+}
+#nwcurso{
+    left: 30%;
+    top: 10px;
+}
+.atlTitle{
+    top: 10px;
+    left: 20%;  
+}
+
+
+.hidden {
+    opacity: 0;
+    display: none;
+    
+}
+.sumir{
+    color: white;
+}
+.txArea{
+    color: white;
+    margin: 10px;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.txArea textarea{
+    color: white;
+    background: transparent;
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin-bottom: 10px
+}
+.footer{
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 30%;
+    transform: translate(-30%, 590%);
+}
+#cadlog{
+    width: 30%;
+}

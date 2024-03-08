@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Curso</title>
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/styleLogin.css">
+    <link rel="shortcut icon" href="/images/html.ico" type="image/x-icon">
+
+    <script defer src="/js/script.js"></script>
+
+</head>
+<body class="cadcorpo">          
+
+    <header class="header">
+        <nav class="nav">
+            <button class="burger"></button>
+        <ul class="nav-list">
+            
+            <li><a href="#">Inclusão&gt</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li> <a href="/html/cadAluno.html">De novo Aluno</a></li>
+                        <li> <a href="/html/cadCurso.html">De novo Curso</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Exclusão&gt</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li> <a href="/html/excluirAluno.html">De novo Aluno</a></li>
+                        <li> <a href="/html/excluirCurso.html">De novo Curso</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Alteração&gt</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li> <a href="/html/alterarAluno.html">De novo Aluno</a></li>
+                        <li> <a href="/html/alterarCurso.html">De novo Curso</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="/html/consulta.html">Consulta</a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+        
+    <div class="area conteiner0">
+        <div>
+            <h1 class="title" id="nwcurso">Novo Curso</h1>
+        </div>
+        <div class="campos">
+            <label for="curso" id="nmcurso">Curso:</label>
+            <input  type="text" name="nmcursocad" id="nmcursocad"   required>
+        </div>
+    
+        <div class="campos"> 
+            <label for="Número de Horas cad" id="">Número de Horas:</label>
+            <input  type="number" name="nhorascad" id="nhorascad" min="20" max="100" required>
+        </div>
+
+        <div class="txArea">
+            <label  for="descCurso">Descrição do Curso:</label>
+            <textarea name="txcurso" id="txcurso" cols="30" rows="10" required></textarea>
+        </div>
+        <button class="btn" type="button">Cadastrar</button><button class="btn" type="button">Cancelar</button>
+    </div>
+    
+    <div class="sumir conteiner3"> 
+        <label for="nwcursovltcad">Deseja Cadastrar um Aluno?</label>
+        <button class="btn btnvoltar"  type="button" onclick="nwcurso_to_Cad()" >Clique aqui!</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="/css/styleLogin.css">
+
+    <link rel="shortcut icon" href="./images/html.ico" type="image/x-icon">
+   
+    
+   
+    <script defer src="./js/script.js" defer></script>
+    
+    <title>Login</title>
+</head>
+<body class="corpo">
+    
+    <div class="conteiner2" >
+        <img src="/images/login.svg" width="300"
+        height="300" srcset="">
+    </div>
+    
+    <div class="conteiner1 area" >
+        
+        <div class="title" id="logtitle">
+            <h1>Login</h1>
+        </div>
+
+      <div class="campos" >
+          
+          <label  for="nomelablog" id="nomelablog">Nome:</label>
+          <input  type="text" name="nomelog" id="nomelog" required>
+         
+          <img id="user"  src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/user.png" alt="user"/>
+          
+      </div>
+        <div class="campos">
+            <label for="senhalablog" id="senhalablog">Senha:</label>
+            <input  type="password" name="senhalog" id="senhalog" >
+           
+            <img id="lock" src="https://img.icons8.com/ios-filled/50/FFFFFF/lock-2.png" alt="lock-2"/>
+        </div>
+
+        <div class="manter">
+
+           <label><input type="checkbox" >Manter-se Logado </label>
+            <a  href="">Esqueceu a Senha?</a><br>
+        </div>
+       
+        <button class="btn" type="button">Logar</button>
+
+        <footer class="footer">
+            <label  for="lbfootlog">Não tem conta ?</label>
+            <button  class="btn" id="cadlog" onclick="login_to_Cadastro()">Cadastrar-se</button> 
+        </footer>
+       
+    </div>
+    
+</body>
+</html>
